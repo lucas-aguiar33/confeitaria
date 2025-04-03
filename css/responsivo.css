@@ -1,0 +1,51 @@
+@media screen and (max-width:680px){
+    nav {
+        display: none;
+    }
+
+    main {
+        width:100%;
+        padding:20px;
+    }
+
+
+    .home button {
+        width:100%;
+    }
+
+    .home h2 {
+        font-size:36px;
+    }
+
+    
+}
+
+
+@media screen and (max-width:920px) {
+    .home p {
+        width:80%;
+    }
+
+    .sobre-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .sobre-info-img {
+        width:100%;
+    }
+
+    .sobre-info-text {
+        width:100%;
+    }
+
+    .sobre-info h3 {
+        font-size:32px;
+    }
+
+
+}
+
