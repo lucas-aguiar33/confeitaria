@@ -3,7 +3,7 @@
     --cor-bg-footer: linear-gradient(to bottom, lightgray, rgb(230, 204, 174));
     --cor-titulos: rgb(59, 34, 20);
     --cor-logo:rgb(101, 57, 36);
-    --cor-button:rgb(157, 127, 84); ;
+    --cor-button:rgb(121, 102, 76); ;
     --cor-span:rgb(207, 148, 85);
 }
 
@@ -17,18 +17,15 @@
 body {
     min-height: 100vh;
     background: var(--cor-bg);
-    position:relative;
 }
 
 header {
     width:100%;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top:15px;
-    padding-bottom:15px;
-    margin-bottom:30px;
-    position: fixed;
+    position: sticky;
     top:0;
     background:var(--cor-bg);
 }
@@ -37,7 +34,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
+.logo span {
+    font-size:2rem;
     color:var(--cor-logo);
     font-family: 'Lobster',sans-serif;
     letter-spacing: 3px;
@@ -56,32 +54,38 @@ nav a:hover{
 }
 
 main {
-    width:80vw;
     margin:auto;
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.218);
     border-radius:10px;
     overflow: hidden;
 }
 
 section {
-    margin-bottom:40px;
+    width:80vw;
+    padding:20px 10px;
+    margin:60px auto;
 }
 
-
-.home {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    gap:20px;
-    padding:20px;
+section:first-of-type {
+    width:100vw;
+    margin-top:0;
     background: url('../img/background-bolo.jpg') no-repeat top;
     background-size:cover;
 }
 
-.home h2 {
-    font-size:42px;
+.home {
+    width:80vw;
+    height:70vh;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+}
+
+.home h1 {
+    font-size:2.5rem;
     color:var(--cor-titulos);
+    margin-top:50px;
 }
 
 .home p {
@@ -96,51 +100,64 @@ section {
     color:#ffffff;
     font-weight: bold;
     font-size:16px;
-    padding:14px;
+    padding:16px;
     border:none;
     border-radius:4px;
+    margin-top: 15px;
     cursor: pointer;
     transition:background-color 0.2s linear;
 }
 
 .home button:hover{
-    background-color: rgb(207, 148, 85)
+    background-color: rgb(107, 91, 73)
 }
 
-.bolos {
-    text-align: center;
-}
 
-.bolos h2, .sobre h2 {
-    font-size:42px;
+section h2 {
+    font-size:3.1rem;
     font-family: 'Lobster', sans-serif;
     color:var(--cor-titulos);
-    margin-bottom:40px;
+    text-align: center;
+    margin-bottom:20px;
 }
 
-.bolos h2 > span, .sobre h2 > span {
+section h2 > span {
     color:var(--cor-span);
     font-family: 'Lobster', sans-serif;
 }
 
-.area-card-bolos {
+.bolos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap:20px;
+    /* justify-content: center; */
+    margin-top:3rem;
 }
 
 .card {
-    width:300px;
+    width:280px;
     height:350px;
     text-align: center;
     border-radius:10px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.282);
+    box-shadow:1px 1px 14px rgba(0, 0, 0, 0.116);
     overflow: hidden;
+    margin:8px;
+
 }
 
-.card img {
+.card-img {
+    height: 70%;
+}
+
+.card-img img {
     width:100%;
+}
+
+.card-body {
+    margin-top:10px;
+}
+
+.card-body h3 {
+    font-size:1.5rem;
 }
 
 .card span {
@@ -150,45 +167,51 @@ section {
 }
 
 .sobre {
-    text-align: center;
-}
-
-.sobre-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   align-items: center;
+   gap:15px;
 
 }
 
-.sobre-info-img {
-    width:50%;
+.sobre h2 {
+    width:100%;
 }
 
-.sobre-info-text {
+.sobre-img {
     width:40%;
+}
+
+.sobre-img img {
+    width:100%;
+}
+
+.sobre-text {
+    width:60%;
     font-size:20px;
 }
 
-.sobre h3 {
-    font-size:48px;
+.sobre-text h3 {
+    font-size:2.4rem;
     color:var(--cor-button);
-    margin-bottom:10px;
-}
-
-.sobre-info-img img {
-    width:100%;
+    margin-bottom:30px;
 }
 
 footer {
     background:var(--cor-bg-footer);
-    padding:40px;
+    height: 80px;
+    padding-top:10px;
     text-align: center;
+}
+
+footer span {
+    font-size:1.2rem;
+    font-weight: bold;
 }
 
 aside {
     position:fixed;
     bottom:10px;
-    right:20px;
+    right:10px;
 }
 
 aside img {
