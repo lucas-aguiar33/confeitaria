@@ -75,12 +75,12 @@ section:first-of-type {
 
 .home {
     width: 80vw;
-    height:70vh;
+    /* height:70vh; */
     margin:auto;
     display:flex;
     flex-direction: column;
     gap:20px;
-    padding:20px;
+    padding:40px 20px;
 }
 
 .home h1 {
@@ -131,7 +131,7 @@ section h2 > span {
 .bolos {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top:3rem;
 }
 
@@ -155,7 +155,7 @@ section h2 > span {
 }
 
 .card-body {
-    margin-top:10px;
+    margin-top:12px;
 }
 
 .card-body h3 {

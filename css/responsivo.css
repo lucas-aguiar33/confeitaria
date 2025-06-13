@@ -1,10 +1,6 @@
-@media screen and (max-width:576px){
+@media screen and (min-width:320px) and (max-width:480px){
     nav {
         display: none;
-    }
-
-    section:first-of-type{
-        background: url('../img/background-bolo.jpg') no-repeat center;
     }
 
     .home {
@@ -22,12 +18,15 @@
     }
 
     .home p {
+        width:100%;
         font-size:1rem;
     }
 
-    .bolos {
-        justify-content: center;
+    .card {
+        height:auto;
+        padding-bottom:15px;
     }
+
 
     .sobre {
        display: block;
@@ -46,32 +45,69 @@
         width: 80%;
     }
 
+    aside img {
+        width:40px;
+    }
 }
-@media screen and (max-width:920px) {
+
+
+@media screen and (min-width:481px) and (max-width:768px){
+    nav {
+        display: none;
+    }
+
+    section {
+        width:100%;
+    }
+
+    .home {
+        width:100%;
+    }
+
+    .home button {
+        width:60%;
+        margin-top:30px;
+    }
+
+    .home h1 {
+        font-size:1.8rem;
+    }
+
     .home p {
-        width:80%;
+        width:60%;
+        font-size:1rem;
     }
 
-    .sobre-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap:20px;
+    .card {
+        height:auto;
+        padding-bottom:15px;
     }
 
-    .sobre-info-img {
+
+    .sobre {
+       display: block;
+       padding:0 20px;
+    }
+
+    .sobre-text, .sobre-img {
         width:100%;
     }
 
-    .sobre-info-text {
-        width:100%;
+    .sobre-img {
+        text-align: center;
     }
 
-    .sobre-info h3 {
-        font-size:32px;
+    .sobre-text h3 {
+        font-size:1.7rem;
+        text-align: center;
     }
 
+    .sobre-img img {
+        width: 50%;
+    }
 
+    aside img {
+        width:40px;
+    }
 }
 
