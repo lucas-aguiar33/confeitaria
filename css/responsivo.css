@@ -1,26 +1,52 @@
-@media screen and (max-width:680px){
+@media screen and (max-width:576px){
     nav {
         display: none;
     }
 
-    main {
-        width:100%;
-        padding:20px;
+    section:first-of-type{
+        background: url('../img/background-bolo.jpg') no-repeat center;
     }
 
+    .home {
+        height: auto;
+        width:100%;
+    }
 
     .home button {
         width:100%;
+        margin-top:30px;
     }
 
-    .home h2 {
-        font-size:36px;
+    .home h1 {
+        font-size:1.8rem;
     }
 
-    
+    .home p {
+        font-size:1rem;
+    }
+
+    .bolos {
+        justify-content: center;
+    }
+
+    .sobre {
+       display: block;
+    }
+
+    .sobre-text, .sobre-img {
+        width:100%;
+    }
+
+    .sobre-text h3 {
+        font-size:1.7rem;
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 80%;
+    }
+
 }
-
-
 @media screen and (max-width:920px) {
     .home p {
         width:80%;

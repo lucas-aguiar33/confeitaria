@@ -35,7 +35,8 @@ a {
 }
 
 .logo span {
-    font-size:2rem;
+    font-size:1.7rem;
+    font-weight: bold;
     color:var(--cor-logo);
     font-family: 'Lobster',sans-serif;
     letter-spacing: 3px;
@@ -68,12 +69,12 @@ section {
 section:first-of-type {
     width:100vw;
     margin-top:0;
-    background: url('../img/background-bolo.jpg') no-repeat top;
+    background: url('../img/background-bolo.jpg') no-repeat center;
     background-size:cover;
 }
 
 .home {
-    width:80vw;
+    width: 80vw;
     height:70vh;
     margin:auto;
     display:flex;
@@ -90,6 +91,7 @@ section:first-of-type {
 
 .home p {
     color:var(--cor-titulos);
+    color:rgb(255, 253, 253);
     font-size:20px;
     width: 50%;
 }
