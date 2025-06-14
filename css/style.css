@@ -42,17 +42,52 @@ a {
     letter-spacing: 3px;
 }
 
-nav a {
+.menu a, .menu-hamburguer a {
     font-size:18px;
     margin-right:15px;
     color:rgb(153, 99, 74);
     transition:color 0.2s ease-in-out;
 }
 
-nav a:hover{
+.menu a:hover, .menu-hamburguer a:hover{
     border-top:3px solid rgb(77,47,32);
     color:rgb(77, 47, 32);
 }
+
+.icone-menu-hamburguer {
+    position:relative;
+    /* border:2px solid green; */
+    width:150px;
+    text-align: center;
+    display: none;
+}
+
+
+.menu-hamburguer {
+    position:absolute;
+    background-color:rgba(229, 208, 183, 0.868);
+    width:150px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    border-radius:10px;
+    z-index: 2;
+    display: none;
+}
+.menu-hamburguer a {
+    display: block;
+    width:100%;
+    padding:5px;
+}
+
+.menu-hamburguer a:not(:first-of-type){
+    margin-top:5px;
+}
+
+.menu-hamburguer a:hover {
+    border:none;
+    background-color:rgb(196, 171, 140);
+    border-radius:4px;
+}
+
 
 main {
     margin:auto;
