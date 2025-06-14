@@ -45,17 +45,17 @@
        display: block;
     }
 
-    .sobre-text, .sobre-img {
+    .sobre-text {
         width:100%;
     }
 
     .sobre-text h3 {
-        font-size:1.7rem;
+        font-size:1rem;
         text-align: center;
     }
 
-    .sobre-img img {
-        width: 80%;
+    .sobre-img {
+        display: none;
     }
 
     .endereco, .fale-conosco {
@@ -143,3 +143,22 @@
     }
 }
 
+
+@media screen and (max-width: 920px){
+     .sobre {
+       display: block;
+    }
+
+    .sobre-text, .sobre-img {
+        width:100%;
+    }
+
+    .sobre-text h3 {
+        font-size:1.6rem;
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 60%;
+    }
+}
