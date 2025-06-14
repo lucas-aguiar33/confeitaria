@@ -56,10 +56,14 @@ a {
 
 .icone-menu-hamburguer {
     position:relative;
-    /* border:2px solid green; */
     width:150px;
     text-align: center;
     display: none;
+}
+
+.icone-menu-hamburguer img {
+    width:25px;
+    cursor: pointer;
 }
 
 
@@ -70,7 +74,7 @@ a {
     box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
     border-radius:10px;
     z-index: 2;
-    /* display: none; */
+    display: none;
 }
 .menu-hamburguer a {
     display: block;
@@ -84,7 +88,7 @@ a {
 
 .menu-hamburguer a:hover {
     border:none;
-    background-color:rgb(196, 171, 140);
+    background-color:rgb(216, 194, 167);
     border-radius:4px;
 }
 
