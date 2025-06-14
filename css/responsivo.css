@@ -58,8 +58,8 @@
         width: 80%;
     }
 
-    aside img {
-        width:40px;
+    aside {
+        display: none;
     }
 }
 
@@ -123,8 +123,8 @@
         width: 50%;
     }
 
-    aside img {
-        width:40px;
+    aside {
+        display: none;
     }
 }
 
