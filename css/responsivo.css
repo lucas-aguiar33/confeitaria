@@ -1,4 +1,13 @@
 @media screen and (min-width:320px) and (max-width:480px){
+    .logo span {
+        font-size:1.1rem ;
+    }
+
+    .logo {
+        text-align: center;
+        width:50%;
+    }
+
     .menu {
         display: none;
     }
