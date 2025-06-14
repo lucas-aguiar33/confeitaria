@@ -28,6 +28,7 @@ header {
     position: sticky;
     top:0;
     background:var(--cor-bg);
+    border-bottom:1px solid rgb(220, 207, 207);
 }
 
 a {
@@ -179,7 +180,7 @@ section h2 > span {
     height:350px;
     text-align: center;
     border-radius:10px;
-    box-shadow:1px 1px 14px rgba(0, 0, 0, 0.116);
+    box-shadow:2px 3px 5px rgba(0, 0, 0, 0.263);
     overflow: hidden;
     margin:8px;
 
@@ -237,11 +238,50 @@ section h2 > span {
     margin-bottom:30px;
 }
 
+.contato {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap:10px;
+    margin-top:50px;
+}
+
+.endereco, .fale-conosco {
+    min-width: 300px;
+    width:40%;
+    padding:20px;
+    line-height: 2rem;
+    color:rgb(108, 106, 106);
+    border-radius:5px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.288);
+}
+
+.contato div h3 {
+    font-size:1.6rem;
+    color:var(--cor-button);
+    margin-bottom:20px;
+}
+
+
+
+.fale-conosco .campo{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.campo img {
+    width:20px;
+}
+
+
+
 footer {
     background:var(--cor-bg-footer);
     height: 80px;
     padding-top:10px;
     text-align: center;
+    border-top:5px solid rgb(204, 196, 197)
 }
 
 footer span {
@@ -249,18 +289,3 @@ footer span {
     font-weight: bold;
 }
 
-aside {
-    position:fixed;
-    bottom:10px;
-    right:10px;
-}
-
-aside img {
-    width:42px;
-    cursor: pointer;
-    transition:transform 0.2s ease-in-out;
-}
-
-aside img:hover{
-    transform: scale(1.2);
-}

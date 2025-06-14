@@ -58,9 +58,10 @@
         width: 80%;
     }
 
-    aside {
-        display: none;
+    .endereco, .fale-conosco {
+        width:100%;
     }
+
 }
 
 
@@ -120,11 +121,25 @@
     }
 
     .sobre-img img {
-        width: 50%;
+        width: 60%;
     }
 
-    aside {
-        display: none;
+     .endereco, .fale-conosco {
+        width:100%;
+    }
+
+    .fale-conosco {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .fale-conosco h3 {
+    width:100%;
+    }
+
+    .fale-conosco .campo {
+        min-width: 250px;
+        width:50%;
     }
 }
 
