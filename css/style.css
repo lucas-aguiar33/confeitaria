@@ -72,7 +72,7 @@ a {
     position:absolute;
     background-color:rgba(229, 208, 183, 0.868);
     width:150px;
-    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.732);
     border-radius:10px;
     z-index: 2;
     display: none;
@@ -89,7 +89,7 @@ a {
 
 .menu-hamburguer a:hover {
     border:none;
-    background-color:rgb(216, 194, 167);
+    background-color:rgb(225, 197, 167);
     border-radius:4px;
 }
 
