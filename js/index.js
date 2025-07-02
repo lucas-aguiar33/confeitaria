@@ -1,12 +1,11 @@
-const btnMenu = document.querySelector("#btn-menu");
-const menuHamburguer = document.querySelector(".menu-hamburguer");
-const menuLateral = document.querySelector(".menu-lateral");
-const btnFecharMenu = document.querySelector("#btn-close-menu");
+const btnSideMenu = document.querySelector("#btn-side-menu");
+const sideMenu = document.querySelector(".side-menu");
+const btnCloseMenu = document.querySelector("#btn-close-side-menu");
 
-btnMenu.addEventListener("click", ()=>{
-    menuLateral.classList.add('active');
+btnSideMenu.addEventListener("click", ()=>{
+    sideMenu.classList.add('active');
 })
 
-btnFecharMenu.addEventListener('click',()=>{
-    menuLateral.classList.remove('active');
+btnCloseMenu.addEventListener('click',()=>{
+    sideMenu.classList.remove('active');
 })

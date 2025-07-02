@@ -1,0 +1,9 @@
+@media screen and (min-width: 540px ){
+    .home button {
+        width:70%;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    
+}

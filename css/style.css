@@ -43,15 +43,6 @@ a {
     color:var(--cor-logo);
 }
 
-/* .menu a {
-    font-size:18px;
-    color:rgb(153, 99, 74);
-    transition:color 0.2s ease-in-out;
-}
-
-.menu a:hover {
-    color:rgb(77, 47, 32);
-} */
 
 #btn-menu {
     font-size:2rem;
@@ -68,11 +59,10 @@ section:first-of-type {
     margin-top:0;
     background: url('../img/background-bolo.jpg') no-repeat center;
     background-size:cover;
+    padding:15px;
 }
 
 .home {
-    width: 90vw;
-    margin:auto;
     display:flex;
     flex-direction: column;
     gap:20px;
@@ -121,10 +111,11 @@ section h2 > span {
     color:var(--cor-span);
 }
 
-.bolos {
+.cakes {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap:20px;
 }
 
 .card {
@@ -134,8 +125,7 @@ section h2 > span {
     border-radius:10px;
     box-shadow:1px 1px 15px rgba(0, 0, 0, 0.192);
     overflow: hidden;
-    margin-bottom:20px;
-
+    margin-bottom:10px;
 }
 .card-body {
     margin-top:10px;
@@ -150,33 +140,33 @@ section h2 > span {
     color:var(--cor-span);
 }
 
-.sobre-img {
+.about-img {
     display: none;
 }
 
-.sobre-img img {
+.about-img img {
     width:100%;
 }
 
-.sobre-text {
+.about-text {
     font-size:1rem;
     text-align: justify;
 }
 
-.sobre-text h3 {
+.about-text h3 {
     font-size:1.6rem;
     color:var(--cor-button);
     margin-bottom:15px;
 }
 
-.contato {
+.contact {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     gap:10px;
 }
 
-.endereco, .fale-conosco {
+.address, .talk-to-us {
     width:100%;
     line-height: 2rem;
     padding:10px;
@@ -185,19 +175,19 @@ section h2 > span {
     box-shadow: -2px -1px 15px rgba(0, 0, 0, 0.175);
 }
 
-.contato div h3 {
+.contact div h3 {
     font-size:1.6rem;
     color:var(--cor-button);
     margin-bottom:20px;
 }
 
-.fale-conosco .campo{
+.talk-to-us .field-group{
     display: flex;
     align-items: center;
     gap:8px;
 }
 
-.campo img {
+.field-group img {
     width:20px;
 }
 
@@ -214,7 +204,7 @@ footer span {
     color:var(--cor-logo);
 }
 
-.menu-lateral {
+.side-menu {
     background-color:rgb(255, 234, 219);
     position:absolute;
     z-index:2;
@@ -225,7 +215,7 @@ footer span {
     display: none;
 }
 
-.header-menu {
+.header-side-menu {
     border-bottom:1px solid var(--cor-span);
     display: flex;
     align-items: center;
@@ -233,12 +223,12 @@ footer span {
     padding:0 5px;
 }
 
-.header-menu span {
+.header-side-menu span {
     font-size:1.8rem;
     cursor: pointer;
 }
 
-.menu-lateral h3 {
+.side-menu h3 {
     font-size:1.2rem;
     padding:8px;
     color:var(--cor-logo);
