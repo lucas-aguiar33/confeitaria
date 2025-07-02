@@ -1,6 +1,6 @@
 :root {
-    --cor-bg:linear-gradient(to right, rgb(244, 238, 238), rgb(212, 183, 151));
-    --cor-bg-footer: linear-gradient(to bottom, lightgray, rgb(230, 204, 174));
+    --cor-bg:linear-gradient(to right, rgb(242, 233, 233), rgb(239, 212, 184));
+    --cor-bg-footer: linear-gradient(to  right, rgb(242, 229, 218), rgb(221, 206, 191));
     --cor-titulos: rgb(59, 34, 20);
     --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(121, 102, 76); ;
@@ -17,11 +17,12 @@
 body {
     min-height: 100vh;
     background: var(--cor-bg);
+    overflow-x: hidden;
 }
 
 header {
     width:100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,16 +37,13 @@ a {
 }
 
 .logo span {
-    font-size:1.7rem;
+    font-size:1.1rem;
     font-weight: bold;
     color:var(--cor-logo);
-    font-family: 'Lobster',sans-serif;
-    letter-spacing: 3px;
 }
 
 .menu a, .menu-hamburguer a {
     font-size:18px;
-    margin-right:15px;
     color:rgb(153, 99, 74);
     transition:color 0.2s ease-in-out;
 }
@@ -93,17 +91,10 @@ a {
     border-radius:4px;
 }
 
-
-main {
-    margin:auto;
-    border-radius:10px;
-    overflow: hidden;
-}
-
 section {
-    width:80vw;
-    padding:20px 10px;
-    margin:60px auto;
+    /* width:80vw; */
+    padding:30px;
+    margin:40px 0;
 }
 
 section:first-of-type {
@@ -114,17 +105,15 @@ section:first-of-type {
 }
 
 .home {
-    width: 80vw;
-    /* height:70vh; */
+    width: 90vw;
     margin:auto;
     display:flex;
     flex-direction: column;
     gap:20px;
-    padding:40px 20px;
 }
 
 .home h1 {
-    font-size:2.5rem;
+    font-size:2rem;
     color:var(--cor-titulos);
     margin-top:50px;
 }
@@ -132,19 +121,19 @@ section:first-of-type {
 .home p {
     color:var(--cor-titulos);
     color:rgb(255, 253, 253);
-    font-size:20px;
-    width: 50%;
+    font-size:1rem;
+    width: 100%;
 }
 
 .home button {
-    width:20%;
+    width:100%;
     background-color:var(--cor-button);
     color:#ffffff;
     font-weight: bold;
-    font-size:16px;
-    padding:16px;
+    font-size:1.2rem;
+    padding:18px;
     border:none;
-    border-radius:4px;
+    border-radius:8px;
     margin-top: 15px;
     cursor: pointer;
     transition:background-color 0.2s linear;
@@ -156,50 +145,37 @@ section:first-of-type {
 
 
 section h2 {
-    font-size:3.1rem;
-    font-family: 'Lobster', sans-serif;
+    font-size:2rem;
     color:var(--cor-titulos);
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 
 section h2 > span {
     color:var(--cor-span);
-    font-family: 'Lobster', sans-serif;
 }
 
 .bolos {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top:3rem;
 }
 
 .card {
-    width:280px;
-    height:350px;
+    width:250;
+    height:360px;
     text-align: center;
     border-radius:10px;
-    box-shadow:3px 3px 15px rgba(128, 128, 128, 0.267);
+    box-shadow:1px 1px 15px rgba(0, 0, 0, 0.192);
     overflow: hidden;
-    margin:8px;
+    margin-bottom:20px;
 
 }
-
-.card-img {
-    height: 70%;
-}
-
-.card-img img {
-    width:100%;
-}
-
 .card-body {
-    margin-top:12px;
+    margin-top:10px;
 }
-
 .card-body h3 {
-    font-size:1.5rem;
+    font-size:1.4rem;
 }
 
 .card span {
@@ -208,19 +184,8 @@ section h2 > span {
     color:var(--cor-span);
 }
 
-.sobre {
-   display: flex;
-   align-items: center;
-   gap:15px;
-
-}
-
-.sobre h2 {
-    width:100%;
-}
-
 .sobre-img {
-    width:40%;
+    display: none;
 }
 
 .sobre-img img {
@@ -228,14 +193,14 @@ section h2 > span {
 }
 
 .sobre-text {
-    width:60%;
-    font-size:20px;
+    font-size:1rem;
+    text-align: justify;
 }
 
 .sobre-text h3 {
-    font-size:2rem;
+    font-size:1.6rem;
     color:var(--cor-button);
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 
 .contato {
@@ -243,17 +208,15 @@ section h2 > span {
     flex-flow: row wrap;
     justify-content: center;
     gap:10px;
-    margin-top:50px;
 }
 
 .endereco, .fale-conosco {
-    min-width: 300px;
-    width:40%;
-    padding:20px;
+    width:100%;
     line-height: 2rem;
+    padding:10px;
     color:rgb(108, 106, 106);
-    border-radius:5px;
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.288);
+    border-radius:4px;
+    box-shadow: -2px -1px 15px rgba(0, 0, 0, 0.175);
 }
 
 .contato div h3 {
@@ -278,14 +241,14 @@ section h2 > span {
 
 footer {
     background:var(--cor-bg-footer);
-    height: 80px;
-    padding-top:10px;
+    padding:12px 0;
     text-align: center;
-    border-top:5px solid rgb(204, 196, 197)
+    border-top:1px solid rgb(212, 202, 189)
 }
 
 footer span {
-    font-size:1.2rem;
+    font-size:1rem;
     font-weight: bold;
+    color:var(--cor-logo);
 }
 
