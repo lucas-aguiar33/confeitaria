@@ -1,9 +1,7 @@
 :root {
-    --cor-bg:linear-gradient(to right, rgb(242, 233, 233), rgb(239, 212, 184));
-    --cor-bg-footer: linear-gradient(to  right, rgb(242, 229, 218), rgb(221, 206, 191));
     --cor-titulos: rgb(59, 34, 20);
     --cor-logo:rgb(101, 57, 36);
-    --cor-button:rgb(121, 102, 76); ;
+    --cor-button:rgb(161, 131,94); ;
     --cor-span:rgb(207, 148, 85);
 }
 
@@ -16,7 +14,6 @@
 
 body {
     min-height: 100vh;
-    background: var(--cor-bg);
     overflow-x: hidden;
 }
 
@@ -29,7 +26,8 @@ header {
     padding:0 12px;
     position: sticky;
     top:0;
-    background:var(--cor-bg);
+    z-index:3;
+    background-color: white;
     border-bottom:1px solid rgb(220, 207, 207);
 }
 
@@ -43,8 +41,11 @@ a {
     color:var(--cor-logo);
 }
 
+.menu.menu-lg {
+    display: none;
+}
 
-#btn-menu {
+#btn-side-menu {
     font-size:2rem;
     cursor: pointer;
 }
@@ -66,6 +67,7 @@ section:first-of-type {
     display:flex;
     flex-direction: column;
     gap:20px;
+    padding-top:30px;
 }
 
 .home h1 {
@@ -96,7 +98,7 @@ section:first-of-type {
 }
 
 .home button:hover{
-    background-color: rgb(107, 91, 73)
+    background-color: rgb(147, 123, 92)
 }
 
 
@@ -104,7 +106,7 @@ section h2 {
     font-size:2rem;
     color:var(--cor-titulos);
     text-align: center;
-    margin-bottom:30px;
+    margin-bottom:50px;
 }
 
 section h2 > span {
@@ -172,7 +174,7 @@ section h2 > span {
     padding:10px;
     color:rgb(108, 106, 106);
     border-radius:4px;
-    box-shadow: -2px -1px 15px rgba(0, 0, 0, 0.175);
+    box-shadow: -2px -1px 15px rgba(0, 0, 0, 0.075);
 }
 
 .contact div h3 {
@@ -192,10 +194,9 @@ section h2 > span {
 }
 
 footer {
-    background:var(--cor-bg-footer);
     padding:12px 0;
     text-align: center;
-    border-top:1px solid rgb(212, 202, 189)
+    border-top:3px solid rgb(223, 210, 193)
 }
 
 footer span {
@@ -205,14 +206,14 @@ footer span {
 }
 
 .side-menu {
-    background-color:rgb(255, 234, 219);
     position:absolute;
-    z-index:2;
+    z-index:4;
     right:0;
     top:0;
     width:60%;
     height: 100vh;
     display: none;
+    background:white;
 }
 
 .header-side-menu {
@@ -253,7 +254,7 @@ footer span {
 }
 
 .menu a:hover {
-    background-color:rgb(247, 226, 199);
+    background-color:rgb(224, 210, 191);
     font-weight: 600;
 }
 
