@@ -1,12 +1,12 @@
 const btnMenu = document.querySelector("#btn-menu");
 const menuHamburguer = document.querySelector(".menu-hamburguer");
+const menuLateral = document.querySelector(".menu-lateral");
+const btnFecharMenu = document.querySelector("#btn-close-menu");
 
 btnMenu.addEventListener("click", ()=>{
-    btnMenu.classList.toggle('ativado');
+    menuLateral.classList.add('active');
+})
 
-    if(btnMenu.classList == 'ativado'){
-        menuHamburguer.style.display='block';
-    } else {
-        menuHamburguer.style.display = 'none';
-    }
+btnFecharMenu.addEventListener('click',()=>{
+    menuLateral.classList.remove('active');
 })

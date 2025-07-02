@@ -43,19 +43,19 @@ a {
     color:var(--cor-logo);
 }
 
-.menu a {
+/* .menu a {
     font-size:18px;
     color:rgb(153, 99, 74);
     transition:color 0.2s ease-in-out;
 }
 
 .menu a:hover {
-    border-top:3px solid rgb(77,47,32);
     color:rgb(77, 47, 32);
-}
+} */
 
 #btn-menu {
     font-size:2rem;
+    cursor: pointer;
 }
 
 section {
@@ -215,7 +215,7 @@ footer span {
 }
 
 .menu-lateral {
-    background-color:white;
+    background-color:rgb(255, 246, 229);
     position:absolute;
     z-index:2;
     right:0;
@@ -266,5 +266,9 @@ footer span {
 .menu a:hover {
     background-color:antiquewhite;
     font-weight: 600;
+}
+
+.active {
+    display: block;
 }
 
