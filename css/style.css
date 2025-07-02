@@ -25,7 +25,8 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding:0 12px;
     position: sticky;
     top:0;
     background:var(--cor-bg);
@@ -42,57 +43,22 @@ a {
     color:var(--cor-logo);
 }
 
-/* .menu a, .menu-hamburguer a {
+.menu a {
     font-size:18px;
     color:rgb(153, 99, 74);
     transition:color 0.2s ease-in-out;
 }
 
-.menu a:hover, .menu-hamburguer a:hover{
+.menu a:hover {
     border-top:3px solid rgb(77,47,32);
     color:rgb(77, 47, 32);
 }
 
-.icone-menu-hamburguer {
-    position:relative;
-    width:150px;
-    text-align: center;
-    display: none;
+#btn-menu {
+    font-size:2rem;
 }
-
-.icone-menu-hamburguer img {
-    width:25px;
-    cursor: pointer;
-}
-
-
-.menu-hamburguer {
-    position:absolute;
-    background-color:rgba(229, 208, 183, 0.868);
-    width:150px;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.732);
-    border-radius:10px;
-    z-index: 2;
-    display: none;
-}
-.menu-hamburguer a {
-    display: block;
-    width:100%;
-    padding:5px;
-}
-
-.menu-hamburguer a:not(:first-of-type){
-    margin-top:5px;
-}
-
-.menu-hamburguer a:hover {
-    border:none;
-    background-color:rgb(225, 197, 167);
-    border-radius:4px;
-} */
 
 section {
-    /* width:80vw; */
     padding:30px;
     margin:40px 0;
 }
@@ -225,8 +191,6 @@ section h2 > span {
     margin-bottom:20px;
 }
 
-
-
 .fale-conosco .campo{
     display: flex;
     align-items: center;
@@ -236,8 +200,6 @@ section h2 > span {
 .campo img {
     width:20px;
 }
-
-
 
 footer {
     background:var(--cor-bg-footer);
@@ -260,6 +222,7 @@ footer span {
     top:0;
     width:60%;
     height: 100vh;
+    display: none;
 }
 
 .header-menu {
