@@ -4,6 +4,7 @@
     --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(161, 131,94); ;
     --cor-span:rgb(207, 148, 85);
+    --cor-bg: rgb(225, 199, 166);
 }
 
 * {
@@ -16,12 +17,9 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    background-color:rgb(255, 239, 219);
-    background-color:rgb(251, 235, 215);
-
-
+    /* background-color:rgb(255, 239, 219); */
+    background-color: white;
 }
-
 
 header {
     width:100%;
@@ -30,11 +28,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding:0 12px;
-    position: sticky;
-    top:0;
+    position: relative;
     z-index:3;
-    background-color:rgb(255, 239, 219);
-    border-bottom:1px solid rgb(220, 207, 207);
+    background-color:var(--cor-bg);
 }
 
 a {
@@ -209,7 +205,9 @@ footer {
     padding:12px 0;
     text-align: center;
     border-top:1px solid rgb(235, 218, 218);
-    background-color:rgb(255, 239, 219);
+    background-color:var(--cor-bg);
+    border-top:2px solid var(--cor-button);
+
 }
 
 footer span {
@@ -226,7 +224,8 @@ footer span {
     width:60%;
     height: 100vh;
     display: none;
-    background-color:rgb(255, 239, 219);
+    /* background-color:rgb(255, 239, 219); */
+    background-color:white;
 }
 
 .header-side-menu {
