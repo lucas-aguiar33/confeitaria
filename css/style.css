@@ -1,5 +1,6 @@
 :root {
-    --cor-titulos: rgb(59, 34, 20);
+    --cor-titulos: rgb(122, 94, 77);
+    --cor-titulo-principal: rgb(72, 43, 25);
     --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(161, 131,94); ;
     --cor-span:rgb(207, 148, 85);
@@ -15,7 +16,12 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    background-color:rgb(255, 239, 219);
+    background-color:rgb(251, 235, 215);
+
+
 }
+
 
 header {
     width:100%;
@@ -27,7 +33,7 @@ header {
     position: sticky;
     top:0;
     z-index:3;
-    background-color: white;
+    background-color:rgb(255, 239, 219);
     border-bottom:1px solid rgb(220, 207, 207);
 }
 
@@ -57,10 +63,12 @@ section {
 
 section:first-of-type {
     width:100vw;
+    height:70vh;
     margin-top:0;
     background: url('../img/background-bolo.jpg') no-repeat center;
     background-size:cover;
-    padding:15px;
+    padding:0px;
+    padding:0 10px 0 10px;
 }
 
 .home {
@@ -72,8 +80,10 @@ section:first-of-type {
 
 .home h1 {
     font-size:2rem;
-    color:var(--cor-titulos);
+    color:var(--cor-titulo-principal);
     margin-top:40px;
+    display: relative;
+    z-index:2;
 }
 
 .home p {
@@ -92,7 +102,7 @@ section:first-of-type {
     padding:18px;
     border:none;
     border-radius:8px;
-    margin-top: 15px;
+    margin-top:40px;
     cursor: pointer;
     transition:background-color 0.2s linear;
 }
@@ -153,6 +163,7 @@ section h2 > span {
 .about-text {
     font-size:1rem;
     text-align: justify;
+    color:rgb(92, 90, 90);
 }
 
 .about-text h3 {
@@ -172,13 +183,16 @@ section h2 > span {
     width:100%;
     line-height: 2rem;
     padding:10px;
-    color:rgb(108, 106, 106);
+    color:rgb(112, 110, 110);
     border-radius:4px;
-    box-shadow: -2px -1px 15px rgba(0, 0, 0, 0.075);
 }
 
-.contact div h3 {
-    font-size:1.6rem;
+.address-text {
+    margin-bottom:30px;
+}
+
+.address div h3 {
+    font-size:1.4rem;
     color:var(--cor-button);
     margin-bottom:20px;
 }
@@ -196,7 +210,8 @@ section h2 > span {
 footer {
     padding:12px 0;
     text-align: center;
-    border-top:3px solid rgb(223, 210, 193)
+    border-top:1px solid rgb(235, 218, 218);
+    background-color:rgb(255, 239, 219);
 }
 
 footer span {
@@ -213,7 +228,7 @@ footer span {
     width:60%;
     height: 100vh;
     display: none;
-    background:white;
+    background-color:rgb(255, 239, 219);
 }
 
 .header-side-menu {
