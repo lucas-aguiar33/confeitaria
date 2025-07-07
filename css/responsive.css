@@ -6,8 +6,21 @@
 
 
 @media screen and (min-width: 670px) {
+    section {
+        width:90vw;
+        margin:40px auto;
+    }
+
     .home button {
-        width: 450px;
+        width: 500px;
+    }
+
+    .home p {
+        width: 80%;
+        font-size: 1rem;
+        color: rgb(245, 240, 240);
+        position:relative;
+        z-index:2;
     }
 }
 
@@ -20,6 +33,7 @@
     header {
         padding:0 20px;
     }
+
     .menu.menu-lg {
         display: flex;
         align-items: center;
@@ -46,7 +60,6 @@
 
     section {
         width: 95vw;
-        margin-inline: auto;
     }
 
     .about-img {
@@ -79,7 +92,7 @@
     .home {
         height: 100%;
         width: 90vw;
-        border:1px solid red;
+        /* border:1px solid red; */
         margin: 0 auto;
     }
 
@@ -99,46 +112,4 @@
         font-size: 2.2rem;
     }
 
-    .contact-and-address {
-        display: flex;
-    }
-
-
-}
-
-
-@media screen and (min-width: 1024px) {
-    section {
-        width: 80vw;
-        margin-inline: auto;
-    }
-
-    .home {
-        width:80vw;
-    }
-
-    .about {
-        display: flex;
-    }
-
-    .about-img img {
-        width: 60%;
-    }
-
-    .about-text {
-        width: 50%;
-        padding-top: 20px;
-        font-size:1.2rem;
-    }
-
-    .about-text p {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    section {
-        width:75vw;
-        border:1px solid red;
-    }
 }
