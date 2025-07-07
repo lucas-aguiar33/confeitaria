@@ -4,7 +4,7 @@
     --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(161, 131,94); ;
     --cor-span:rgb(207, 148, 85);
-    --cor-bg: rgb(225, 199, 166);
+    --cor-bg: rgb(245, 226, 202);
 }
 
 * {
@@ -53,8 +53,8 @@ a {
 }
 
 section {
-    padding:30px;
     margin:40px 0;
+    padding:20px;
 }
 
 section:first-of-type {
@@ -63,21 +63,20 @@ section:first-of-type {
     margin-top:0;
     background: url('../img/background-bolo.jpg') no-repeat center;
     background-size:cover;
-    padding:0px;
-    padding:0 10px 0 10px;
+    padding:0 20px;
 }
 
 .home {
     display:flex;
+    margin:0 auto;
     flex-direction: column;
     gap:20px;
-    padding-top:30px;
+    padding-top:60px;
 }
 
 .home h1 {
     font-size:2rem;
     color:var(--cor-titulo-principal);
-    margin-top:40px;
     display: relative;
     z-index:2;
 }
@@ -95,7 +94,7 @@ section:first-of-type {
     color:#ffffff;
     font-weight: bold;
     font-size:1.2rem;
-    padding:18px;
+    padding:16px;
     border:none;
     border-radius:8px;
     margin-top:40px;
@@ -123,7 +122,7 @@ section h2 > span {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap:20px;
+    /* gap:20px; */
 }
 
 .card {
@@ -133,7 +132,7 @@ section h2 > span {
     border-radius:10px;
     box-shadow:1px 1px 15px rgba(0, 0, 0, 0.192);
     overflow: hidden;
-    margin-bottom:10px;
+    margin: 15px 10px;
 }
 .card-body {
     margin-top:10px;
@@ -171,42 +170,27 @@ section h2 > span {
 .contact {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap:10px;
+    /* padding:0 10px; */
 }
 
-.address, .talk-to-us {
-    width:100%;
-    line-height: 2rem;
-    padding:10px;
-    color:rgb(112, 110, 110);
-    border-radius:4px;
-}
-.address-text {
-    margin-bottom:30px;
-}
-.address div h3 {
-    font-size:1.4rem;
-    color:var(--cor-button);
-    margin-bottom:20px;
-}
-
-.talk-to-us .field-group{
+.field-group{
+    
     display: flex;
     align-items: center;
-    gap:8px;
+    gap:10px;
+    font-size:1.2rem;
+    line-height: 3rem;
 }
 
 .field-group img {
-    width:20px;
+    width:30px;
 }
 
 footer {
     padding:12px 0;
     text-align: center;
-    border-top:1px solid rgb(235, 218, 218);
+    border-top:2px solid rgb(229, 220, 220);
     background-color:var(--cor-bg);
-    border-top:2px solid var(--cor-button);
 
 }
 

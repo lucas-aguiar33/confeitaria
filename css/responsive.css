@@ -77,8 +77,9 @@
     }
 
     .home {
-        height: 80vh;
+        height: 100%;
         width: 90vw;
+        border:1px solid red;
         margin: 0 auto;
     }
 
@@ -112,6 +113,10 @@
         margin-inline: auto;
     }
 
+    .home {
+        width:80vw;
+    }
+
     .about {
         display: flex;
     }
@@ -128,5 +133,12 @@
 
     .about-text p {
         margin-top: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section {
+        width:75vw;
+        border:1px solid red;
     }
 }
