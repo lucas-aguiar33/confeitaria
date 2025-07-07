@@ -1,10 +1,12 @@
 :root {
-    --cor-titulos: rgb(122, 94, 77);
-    --cor-titulo-principal: rgb(72, 43, 25);
+    --cor-titulos: rgb(98, 59, 34);
+    --cor-titulo-principal: rgb(90, 64, 48);
     --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(161, 131,94); ;
     --cor-span:rgb(207, 148, 85);
-    --cor-bg: rgb(245, 226, 202);
+    --cor-bg: rgb(239, 231, 214);
+    --cor-section:  rgb(235, 227, 208);
+
 }
 
 * {
@@ -18,6 +20,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     overflow-x:hidden;
+    background-color: var(--cor-bg);
 }
 
 header {
@@ -29,7 +32,7 @@ header {
     padding:0 12px;
     position: relative;
     z-index:3;
-    background-color:var(--cor-bg);
+    background-color: rgb(239, 231, 214);
 }
 
 a {
@@ -54,6 +57,8 @@ a {
 section {
     margin:40px auto;
     padding:30px;
+    background-color: var(--cor-section);
+    border-radius:20px;
 }
 
 section:first-of-type {
@@ -63,6 +68,7 @@ section:first-of-type {
     background-size:cover;
     margin-top:0;
     padding:20px;
+    border-radius:0;
 }
 
 .home {
@@ -122,21 +128,21 @@ section h2 > span {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* gap:20px; */
+    gap:20px;
 }
 
 .card {
-    width:250;
+    width:220;
     height:360px;
     text-align: center;
     border-radius:10px;
-    box-shadow:1px 1px 15px rgba(0, 0, 0, 0.192);
+    box-shadow:-1px -1px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 15px 10px;
 }
 .card-body {
     margin-top:10px;
 }
+
 .card-body h3 {
     font-size:1.4rem;
 }
@@ -159,6 +165,10 @@ section h2 > span {
     font-size:1rem;
     text-align: justify;
     color:rgb(92, 90, 90);
+}
+
+.about-text p {
+    margin-top:15px;
 }
 
 .about-text h3 {
@@ -189,9 +199,8 @@ section h2 > span {
 footer {
     padding:12px 0;
     text-align: center;
-    border-top:2px solid rgb(229, 220, 220);
-    background-color:var(--cor-bg);
-
+    border-top:2px solid rgb(210, 194, 172);
+    background-color: var(--cor-section);
 }
 
 footer span {
