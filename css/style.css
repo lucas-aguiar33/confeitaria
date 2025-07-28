@@ -1,12 +1,8 @@
 :root {
     --cor-titulos: rgb(98, 59, 34);
-    --cor-titulo-principal: rgb(90, 64, 48);
-    --cor-logo:rgb(101, 57, 36);
     --cor-button:rgb(161, 131,94); ;
-    --cor-span:rgb(207, 148, 85);
+    --cor-subtitulos:rgb(207, 148, 85);
     --cor-bg: rgb(239, 231, 214);
-    --cor-section:  rgb(236, 228, 208);
-
 }
 
 * {
@@ -29,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 12px;
+    padding:0 20px;
     position: relative;
     z-index:3;
     background-color: rgb(239, 231, 214);
@@ -42,7 +38,7 @@ a {
 .logo span {
     font-size:1.1rem;
     font-weight: bold;
-    color:var(--cor-logo);
+    color:var(--cor-titulos);
 }
 
 .menu.menu-lg {
@@ -57,7 +53,7 @@ a {
 section {
     margin:40px auto;
     padding:30px;
-    background-color: var(--cor-section);
+    /* background-color: var(--cor-section); */
     border-radius:20px;
 }
 
@@ -81,8 +77,8 @@ section:first-of-type {
 
 .home h1 {
     font-size:2rem;
-    font-weight: 600;
-    color:var(--cor-titulo-principal);
+    font-weight: bold;
+    color:var(--cor-titulos);
     display: relative;
     z-index:2;
 }
@@ -96,7 +92,7 @@ section:first-of-type {
 
 .home button {
     width:100%;
-    background-color:var(--cor-button);
+    background-color: rgb(147, 123, 92);
     color:#ffffff;
     font-weight: 600;
     font-size:1.2rem;
@@ -109,19 +105,16 @@ section:first-of-type {
 }
 
 .home button:hover{
-    background-color: rgb(147, 123, 92)
+    background-color:var(--cor-button);
 }
 
 
 section h2 {
-    font-size:2rem;
+    font-size:3rem;
+    font-family: 'Lobster';
     color:var(--cor-titulos);
     text-align: center;
     margin-bottom:50px;
-}
-
-section h2 > span {
-    color:var(--cor-span);
 }
 
 .cakes {
@@ -135,8 +128,8 @@ section h2 > span {
     width:220;
     height:360px;
     text-align: center;
-    border-radius:10px;
-    box-shadow:-1px -1px 10px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    box-shadow:2px 2px 15px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 .card-body {
@@ -144,13 +137,15 @@ section h2 > span {
 }
 
 .card-body h3 {
+    font-weight: 600;
     font-size:1.4rem;
+    color:var(--cor-titulos);
 }
 
 .card span {
-    font-size:32px;
+    font-size:1.8rem;
     font-weight: bold;
-    color:var(--cor-span);
+    color:var(--cor-subtitulos);
 }
 
 .about-img {
@@ -163,7 +158,7 @@ section h2 > span {
 
 .about-text {
     font-size:1rem;
-    text-align: justify;
+    text-align: center;
     color:rgb(92, 90, 90);
 }
 
@@ -172,15 +167,16 @@ section h2 > span {
 }
 
 .about-text h3 {
-    font-size:1.6rem;
+    font-size:1.8rem;
+    font-weight: 600;
     color:var(--cor-button);
     margin-bottom:15px;
+    text-align: center;
 }
 
 .contact {
     display: flex;
     flex-flow: row wrap;
-    /* padding:0 10px; */
 }
 
 .field-group{
@@ -217,8 +213,7 @@ footer span {
     width:70%;
     height: 100vh;
     display: none;
-    /* background-color:rgb(255, 239, 219); */
-    background-color:white;
+    background-color:var(--cor-bg)
 }
 
 .header-side-menu {
@@ -236,8 +231,7 @@ footer span {
 .side-menu h3 {
     font-size:1rem;
     padding:8px;
-    color:var(--cor-logo);
-    text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.281);
+    color:var(--cor-titulos);
 }
 
 .menu {
@@ -258,7 +252,7 @@ footer span {
 }
 
 .menu a:hover {
-    background-color:var(--cor-bg);
+    background-color:#ecdfcc;
     font-weight: 600;
 }
 
