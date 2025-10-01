@@ -81,7 +81,6 @@
 
     .home p {
         width: 80%;
-        font-size: 1rem;
         color: rgb(245, 240, 240);
         position:relative;
         z-index:2;
@@ -140,6 +139,10 @@
         font-size:20px;
     }
 
+    section:first-of-type {
+        height: 80vh;
+    }
+
     .home {
         height: 70vh;
         width: 80vw;
@@ -155,11 +158,11 @@
     }
 
     .home h1 {
-        font-size:2.5rem;
+        font-size:32px;
     }
 
     section h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .about {
@@ -216,6 +219,12 @@
 
     .about-img {
         width:45%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home h1 {
+        font-size:38px;
     }
 }
 
