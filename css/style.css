@@ -37,10 +37,8 @@ a {
 }
 
 .logo span {
-    font-size:1.3rem;
+    font-size:18px;
     font-weight: bold;
-    font-family: 'Lobster';
-    letter-spacing: 4px;
     color:var(--cor-titulos);
 }
 
@@ -184,12 +182,12 @@ section h2 {
 .about-text p {
     font-size:1rem;
     line-height: 160%;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 
 }
 
 .about-text h3 {
-    font-size:1.8rem;
+    font-size:2rem;
     font-weight: 600;
     color:var(--cor-button);
     margin-bottom:40px;
@@ -223,7 +221,7 @@ section h2 {
 }
 
 .card-assessment-text {
-    color:rgba(0, 0, 0, 0.8);
+    color:rgba(0, 0, 0, 0.6);
 }
 
 .card-assessment  h4 {
@@ -244,22 +242,15 @@ section h2 {
     cursor: pointer;
 }
 
-.contact {
-    display: flex;
-    flex-flow: row wrap;
+.location {
+    width:100%;
 }
 
-.field-group{
-    
-    display: flex;
-    align-items: center;
-    gap:10px;
-    font-size:1.2rem;
-    line-height: 3rem;
-}
-
-.field-group img {
-    width:30px;
+.location p {
+    margin-bottom:20px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.6);
+    font-size:18px;
 }
 
 footer {
@@ -267,6 +258,20 @@ footer {
     text-align: center;
     border-top:2px solid rgb(210, 194, 172);
     background-color: var(--cor-section);
+}
+
+footer .contact {
+    margin-bottom:20px;
+}
+
+footer .contact img {
+    width:32px;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+footer  .contact img:hover {
+    transform: scale(1.1);
 }
 
 footer span {
