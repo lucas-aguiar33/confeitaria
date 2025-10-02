@@ -4,8 +4,11 @@ const btnCloseMenu = document.querySelector("#btn-close-side-menu");
 
 btnSideMenu.addEventListener("click", ()=>{
     sideMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
 })
 
 btnCloseMenu.addEventListener('click',()=>{
     sideMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
 })
